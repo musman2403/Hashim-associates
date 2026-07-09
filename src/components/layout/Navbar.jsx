@@ -85,6 +85,7 @@ const Navbar = () => {
           <button 
             className={`md:hidden p-2 ${textClasses}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMobileMenuOpen ? <X size={32} /> : <Menu size={32} />}
           </button>

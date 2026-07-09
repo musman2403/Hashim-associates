@@ -53,11 +53,11 @@ const Properties = () => {
           className="bg-white p-4 rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 flex flex-col md:flex-row gap-4 mb-16 relative z-30"
         >
           <div className="flex-1 flex items-center px-4 py-3 border border-gray-100 rounded-xl bg-gray-50/50 focus-within:bg-white focus-within:ring-2 focus-within:ring-primary/20 transition-all">
-            <Search className="text-gray-400 mr-3" size={20} />
-            <input type="text" placeholder="Search premium listings..." className="w-full bg-transparent outline-none text-gray-900 font-medium placeholder:text-gray-400 placeholder:font-normal" />
+            <Search className="text-gray-500 mr-3" size={20} />
+            <input type="text" placeholder="Search premium listings..." className="w-full bg-transparent outline-none text-gray-900 font-medium placeholder:text-gray-500 placeholder:font-normal" />
           </div>
           <div className="w-full md:w-64 flex items-center px-4 py-3 border border-gray-100 rounded-xl bg-gray-50/50 focus-within:bg-white focus-within:ring-2 focus-within:ring-primary/20 transition-all">
-            <MapPin className="text-gray-400 mr-3" size={20} />
+            <MapPin className="text-gray-500 mr-3" size={20} />
             <select className="w-full bg-transparent border-none outline-none text-gray-900 font-medium appearance-none">
               <option value="">All Locations</option>
               <option value="A">Block A</option>

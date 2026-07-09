@@ -24,7 +24,7 @@ const AreaMap = () => {
       {/* Map Placeholder Container */}
       <div className="w-full h-[500px] bg-gray-100 rounded-xl border-2 border-dashed border-gray-300 flex items-center justify-center relative overflow-hidden group">
         <div className="text-center p-6 z-10">
-          <Map size={64} className="mx-auto text-gray-400 mb-4 group-hover:scale-110 transition-transform duration-500" />
+          <Map size={64} className="mx-auto text-gray-500 mb-4 group-hover:scale-110 transition-transform duration-500" />
           <h4 className="text-xl font-bold text-gray-600">Map Dashboard Coming Soon</h4>
           <p className="text-gray-500 max-w-sm mt-2">The interactive SVG map visualizing Blocks A-M and amenities will be rendered here.</p>
         </div>

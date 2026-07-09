@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               <h2 className="font-bold text-3xl tracking-tight text-white">Hashim Associates</h2>
             </div>
-            <p className="text-gray-400 text-lg leading-relaxed max-w-md font-light">
+            <p className="text-gray-500 text-lg leading-relaxed max-w-md font-light">
               Your trusted property experts in IEP Engineers Town, Lahore. We provide verified properties and transparent guidance from consultation to transfer.
             </p>
             <div className="flex gap-4 pt-4">
@@ -28,10 +28,10 @@ const Footer = () => {
           <div className="lg:col-span-3">
             <h3 className="font-bold text-lg mb-6 text-white tracking-wide">Explore</h3>
             <ul className="space-y-4">
-              <li><Link to="/" className="text-gray-400 hover:text-secondary transition-colors font-medium">Home</Link></li>
-              <li><Link to="/properties" className="text-gray-400 hover:text-secondary transition-colors font-medium">Properties</Link></li>
-              <li><Link to="/about" className="text-gray-400 hover:text-secondary transition-colors font-medium">About Us</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-secondary transition-colors font-medium">Contact</Link></li>
+              <li><Link to="/" className="text-gray-500 hover:text-secondary transition-colors font-medium">Home</Link></li>
+              <li><Link to="/properties" className="text-gray-500 hover:text-secondary transition-colors font-medium">Properties</Link></li>
+              <li><Link to="/about" className="text-gray-500 hover:text-secondary transition-colors font-medium">About Us</Link></li>
+              <li><Link to="/contact" className="text-gray-500 hover:text-secondary transition-colors font-medium">Contact</Link></li>
             </ul>
           </div>
 

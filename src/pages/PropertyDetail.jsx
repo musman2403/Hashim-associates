@@ -50,7 +50,7 @@ const PropertyDetail = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </>
           ) : (
-            <div className="w-full h-full flex items-center justify-center text-gray-400 bg-gray-200">
+            <div className="w-full h-full flex items-center justify-center text-gray-500 bg-gray-200">
               <Building2 size={48} className="opacity-50 mb-4" />
               <span className="font-bold">Image Coming Soon</span>
             </div>
@@ -75,25 +75,25 @@ const PropertyDetail = () => {
 
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="grid grid-cols-2 md:grid-cols-4 gap-6 py-10 border-y border-gray-200">
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                <p className="text-gray-400 text-sm font-bold uppercase tracking-wider mb-2">Dimensions</p>
+                <p className="text-gray-500 text-sm font-bold uppercase tracking-wider mb-2">Dimensions</p>
                 <div className="flex items-center gap-2 font-black text-gray-900 text-lg">
                   <Maximize size={20} className="text-primary" />
                   {property.type}
                 </div>
               </div>
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                <p className="text-gray-400 text-sm font-bold uppercase tracking-wider mb-2">Location</p>
+                <p className="text-gray-500 text-sm font-bold uppercase tracking-wider mb-2">Location</p>
                 <div className="flex items-center gap-2 font-black text-gray-900 text-lg">
                   <MapPin size={20} className="text-primary" />
                   Block {property.block}
                 </div>
               </div>
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                <p className="text-gray-400 text-sm font-bold uppercase tracking-wider mb-2">Zone</p>
+                <p className="text-gray-500 text-sm font-bold uppercase tracking-wider mb-2">Zone</p>
                 <div className="font-black text-gray-900 capitalize text-lg">{property.category}</div>
               </div>
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                <p className="text-gray-400 text-sm font-bold uppercase tracking-wider mb-2">Clearance</p>
+                <p className="text-gray-500 text-sm font-bold uppercase tracking-wider mb-2">Clearance</p>
                 <div className="font-black text-green-600 text-lg">100% Clear</div>
               </div>
             </motion.div>

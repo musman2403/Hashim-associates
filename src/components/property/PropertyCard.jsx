@@ -32,7 +32,7 @@ const PropertyCard = ({ property, index = 0 }) => {
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
         ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center text-gray-400 bg-gray-50">
+          <div className="w-full h-full flex flex-col items-center justify-center text-gray-500 bg-gray-50">
             <span className="font-medium">Image Not Available</span>
           </div>
         )}
@@ -51,7 +51,7 @@ const PropertyCard = ({ property, index = 0 }) => {
             {property.title}
           </h3>
           <p className="text-gray-500 flex items-center gap-1.5 text-sm font-medium">
-            <MapPin size={16} className="text-gray-400 shrink-0" /> Block {property.block}, IEP Town
+            <MapPin size={16} className="text-gray-500 shrink-0" /> Block {property.block}, IEP Town
           </p>
         </div>
 
@@ -65,6 +65,7 @@ const PropertyCard = ({ property, index = 0 }) => {
         <Link 
           to={`/property/${property.id}`}
           className="flex items-center justify-between text-primary font-bold hover:text-primary-light transition-colors"
+          aria-label={`View details about ${property.title}`}
         >
           <span className="uppercase tracking-wide text-sm">View Details</span>
           <div className="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">

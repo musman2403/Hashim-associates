@@ -83,7 +83,7 @@ const Blogs = () => {
                 
                 <div className="p-8 flex-grow flex flex-col justify-between">
                   <div>
-                    <div className="flex items-center gap-4 text-xs font-bold text-gray-400 mb-4 uppercase tracking-wider">
+                    <div className="flex items-center gap-4 text-xs font-bold text-gray-500 mb-4 uppercase tracking-wider">
                       <span className="flex items-center gap-1.5"><Calendar size={14} /> {article.date}</span>
                       <span className="flex items-center gap-1.5"><Clock size={14} /> {article.readTime}</span>
                     </div>

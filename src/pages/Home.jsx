@@ -14,7 +14,7 @@ const FAQItem = ({ question, answer }) => {
         onClick={() => setIsOpen(!isOpen)} 
         className="w-full flex items-center justify-between py-6 text-left focus:outline-none"
       >
-        <h4 className="text-xl font-bold text-gray-900 pr-4">{question}</h4>
+        <h3 className="text-xl font-bold text-gray-900 pr-4">{question}</h3>
         <div className="shrink-0 w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-primary transition-transform">
           {isOpen ? <Minus size={18} /> : <Plus size={18} />}
         </div>
@@ -115,7 +115,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="mt-6 text-gray-400 text-sm font-medium flex items-center justify-center gap-2"
+            className="mt-6 text-gray-500 text-sm font-medium flex items-center justify-center gap-2"
           >
             <ShieldCheck size={16} className="text-secondary" /> 100% Confidential & Secure Consultation
           </motion.p>
@@ -140,7 +140,7 @@ const Home = () => {
                 </div>
                 <div>
                   <p className="font-bold text-xl text-white">{item.title}</p>
-                  <p className="text-sm text-gray-400 font-medium uppercase tracking-wider mt-1">{item.subtitle}</p>
+                  <p className="text-sm text-gray-500 font-medium uppercase tracking-wider mt-1">{item.subtitle}</p>
                 </div>
               </div>
             ))}
@@ -322,7 +322,7 @@ const Home = () => {
                   {item.step}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-gray-400 text-sm font-medium">{item.desc}</p>
+                <p className="text-gray-500 text-sm font-medium">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -375,22 +375,22 @@ const Home = () => {
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-[2rem] hover:bg-white/10 transition-colors">
                 <div className="text-5xl font-black text-secondary mb-4">13</div>
                 <div className="text-white text-lg font-bold">Developed Blocks</div>
-                <div className="text-gray-400 text-sm mt-2">Fully populated and secure.</div>
+                <div className="text-gray-500 text-sm mt-2">Fully populated and secure.</div>
               </div>
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-[2rem] hover:bg-white/10 transition-colors mt-12">
                 <div className="text-5xl font-black text-secondary mb-4">150<span className="text-3xl">ft</span></div>
                 <div className="text-white text-lg font-bold">Main Boulevard</div>
-                <div className="text-gray-400 text-sm mt-2">Commercial hub.</div>
+                <div className="text-gray-500 text-sm mt-2">Commercial hub.</div>
               </div>
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-[2rem] hover:bg-white/10 transition-colors -mt-12">
                 <div className="text-5xl font-black text-secondary mb-4">24/7</div>
                 <div className="text-white text-lg font-bold">Security Patrols</div>
-                <div className="text-gray-400 text-sm mt-2">Peace of mind guaranteed.</div>
+                <div className="text-gray-500 text-sm mt-2">Peace of mind guaranteed.</div>
               </div>
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-[2rem] hover:bg-white/10 transition-colors">
                 <div className="text-5xl font-black text-secondary mb-4">100%</div>
                 <div className="text-white text-lg font-bold">LDA Approved</div>
-                <div className="text-gray-400 text-sm mt-2">Clear titles and NOCs.</div>
+                <div className="text-gray-500 text-sm mt-2">Clear titles and NOCs.</div>
               </div>
             </motion.div>
           </div>
@@ -435,7 +435,7 @@ const Home = () => {
                     {item.name.charAt(0)}
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg">{item.name}</h4>
+                    <h3 className="font-bold text-gray-900 text-lg">{item.name}</h3>
                     <p className="text-sm text-secondary font-bold uppercase tracking-wide">{item.role}</p>
                   </div>
                 </div>

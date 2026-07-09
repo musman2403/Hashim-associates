@@ -43,7 +43,7 @@ const BlogDetail = () => {
               <span className="bg-primary/10 text-primary px-5 py-2 rounded-full text-sm font-black tracking-widest uppercase">
                 {article.category}
               </span>
-              <div className="flex items-center gap-4 text-sm font-bold text-gray-400 uppercase tracking-wider">
+              <div className="flex items-center gap-4 text-sm font-bold text-gray-500 uppercase tracking-wider">
                 <span className="flex items-center gap-1.5"><Calendar size={16} /> {article.date}</span>
                 <span className="flex items-center gap-1.5"><Clock size={16} /> {article.readTime}</span>
               </div>
@@ -68,7 +68,10 @@ const BlogDetail = () => {
                   <p className="text-sm font-medium text-gray-500">Investment Advisory Team</p>
                 </div>
               </div>
-              <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors shadow-sm">
+              <button 
+                className="w-12 h-12 bg-white rounded-full flex items-center justify-center border border-gray-200 text-gray-500 hover:text-primary hover:border-primary transition-colors shadow-sm"
+                aria-label="Share article"
+              >
                 <Share2 size={20} />
               </button>
             </div>

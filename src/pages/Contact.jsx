@@ -80,7 +80,7 @@ const Contact = () => {
               <div>
                 <h4 className="font-bold text-gray-900 mb-2">Direct Line / WhatsApp</h4>
                 <a href="tel:+923135779479" className="text-gray-600 hover:text-primary transition-colors text-lg font-bold block">+92 313 5779479</a>
-                <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">Fastest Response</span>
+                <span className="text-xs text-gray-500 font-medium uppercase tracking-wider">Fastest Response</span>
               </div>
             </motion.div>
 
@@ -147,7 +147,7 @@ const Contact = () => {
           <div className="md:w-1/3 p-12 bg-primary-dark text-white flex flex-col justify-center relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-2xl group-hover:bg-secondary/20 transition-colors duration-500"></div>
             <h3 className="text-3xl font-black mb-4 tracking-tight">Visit Our Office</h3>
-            <p className="text-gray-400 mb-8 leading-relaxed font-light">
+            <p className="text-gray-500 mb-8 leading-relaxed font-light">
               Located at the prestigious main roundabout of Sector A in IEP Engineers Town. Drop by for a premium consultation regarding your property portfolio.
             </p>
             <a href="https://maps.app.goo.gl/S9yBoq8tRt1z4k7u8" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 text-secondary font-bold hover:text-white transition-colors w-max">
@@ -155,7 +155,7 @@ const Contact = () => {
             </a>
           </div>
           <div className="md:w-2/3 h-96 md:h-auto relative bg-gray-200">
-             <div className="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400">
+             <div className="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-500">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13615.529813083163!2d74.2709!3d31.4116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391901a1467bdab7%3A0x6b6d510e0dd22a3d!2sIEP%20Engineers%20Town%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1717200000000!5m2!1sen!2sus" 
                   width="100%" 
