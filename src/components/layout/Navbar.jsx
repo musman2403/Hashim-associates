@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <header className={headerClasses}>
-      <div className="container mx-auto px-4 md:px-6 md:max-w-6xl">
+      <div className="w-full px-4 md:px-8 lg:px-12">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-4 group">

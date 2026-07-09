@@ -22,7 +22,7 @@ const About = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-primary-dark/80 z-10 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-primary-dark/40 to-transparent z-10"></div>
           <img src="/images/properties-hero.jpg" alt="Hashim Associates Office" className="w-full h-full object-cover animate-[kenburns_20s_ease-in-out_infinite_alternate]" />
         </div>
 
