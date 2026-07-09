@@ -75,12 +75,17 @@ const BlogDetail = () => {
           </motion.header>
 
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>
-            {/* Featured Image Placeholder (Gradient since no image data) */}
-            <div className="aspect-[21/9] w-full rounded-[3rem] overflow-hidden mb-12 shadow-xl bg-gradient-to-br from-primary-light/20 to-primary-dark/20 relative">
-               <div className="absolute inset-0 flex items-center justify-center text-primary/40">
-                  <Building2 size={64} className="opacity-50" />
-               </div>
-            </div>
+            {article.image ? (
+              <div className="aspect-[21/9] w-full rounded-[3rem] overflow-hidden mb-12 shadow-xl relative">
+                <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
+              </div>
+            ) : (
+              <div className="aspect-[21/9] w-full rounded-[3rem] overflow-hidden mb-12 shadow-xl bg-gradient-to-br from-primary-light/20 to-primary-dark/20 relative">
+                 <div className="absolute inset-0 flex items-center justify-center text-primary/40">
+                    <Building2 size={64} className="opacity-50" />
+                 </div>
+              </div>
+            )}
 
             <div className="prose prose-lg md:prose-xl max-w-none text-gray-600 font-medium leading-relaxed prose-headings:font-black prose-headings:tracking-tight prose-headings:text-gray-900">
               <p>

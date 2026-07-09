@@ -69,8 +69,11 @@ const Blogs = () => {
             <motion.div key={article.id} variants={fadeInUp} className="h-full">
               <Link to={`/blog/${article.id}`} className="group block h-full bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 hover:-translate-y-1 flex flex-col">
                 <div className="relative h-56 overflow-hidden bg-gray-100">
-                  {/* Using a placeholder gradient since no images are in data yet */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary-light/20 to-primary-dark/20 group-hover:scale-105 transition-transform duration-700"></div>
+                  {article.image ? (
+                    <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary-light/20 to-primary-dark/20 group-hover:scale-105 transition-transform duration-700"></div>
+                  )}
                   <div className="absolute top-4 left-4">
                     <span className="bg-white/90 backdrop-blur-sm text-primary-dark px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase shadow-sm">
                       {article.category}
